@@ -122,5 +122,34 @@ color: var(--design-color);
     line-height: 2;
    
 }
+/* images */
+.images{
+    height: 375px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.images img{
+   width: 100%;
+}
+
+/* footer */
+footer{
+    height: 350px;
+    background-color: #90D4C6;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    color: var(--design-color);
+    padding: 120px 0;
+    font-family: 'Barlow', sans-serif;
+}
+.media_icons{
+    display: flex;
+    justify-content:space-around ;
+}
 }
 
