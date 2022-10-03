@@ -26,20 +26,22 @@ body{
 --design-color:#24554A;
 --photo-color:#19536C;
 --design-text-padding:398px 24px 0 24px;
+--desktop-orange:800px;
+--arrow-desktop-padding:200px 705px 0 750px;
 }
 
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    /* orange */
 .slice_orange{
-background-image: url('./images/mobile/image-header.jpg');
-height: var(--orange-height);
-background-size: cover;
+    background-image: url('./images/desktop/image-header.jpg');
+    height: var(--desktop-orange);
+    background-size: cover;
 }
-
+.hamburger{
+    display: none;
+}
 .logo{
     display: flex;
     justify-content: space-between;
-    padding: var(--logo-space);
+    flex-direction: row;
 }
 .slice_orange h3{
     text-align: center;
@@ -48,6 +50,79 @@ background-size: cover;
     padding-top: 80px;
     letter-spacing: 8px; 
 }
+
+.arrow{
+ padding: var(--arrow-desktop-padding);
+  }
+
+.shadow_egg{
+    background-image: url('./images/desktop/image-transform.jpg');
+    height: var(--graphic-height);
+    background-size: cover;
+    width: 720px;
+} 
+.flex-transform{
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+.transform{
+    /* text-align: center; */
+    width: 445px;
+}
+.grid-standOut{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.glass{
+    background-image: url('./images/desktop/image-stand-out.jpg');
+    height: var(--graphic-height);
+    background-size: cover;
+    }
+.graphic_design{
+   background-image: url('./images/desktop/image-graphic-design.jpg');
+   height: var(--graphic-height);
+   background-size: cover;
+   padding: var(--design-text-padding);
+   text-align: center;
+   color: var(--design-color);
+}
+.photography{
+    height: var(--graphic-height);
+    background-image: url('./images/desktop/image-photography.jpg');
+    background-size: cover;
+    padding: var(--design-text-padding);
+    text-align: center;
+    color:var(--photo-color);
+}
+
+
+
+
+
+
+
+/* MOBILE */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* orange */
+.slice_orange{
+background-image: url('./images/mobile/image-header.jpg');
+height: var(--orange-height);
+background-size: cover;
+}
+.hamburger{
+    display: block;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding: var(--logo-space);
+}
+.nav{
+    display: none !important;
+}
+
 .arrow{
   padding: var(--arrow-padding);
 }
@@ -57,6 +132,10 @@ background-size: cover;
     background-image: url('./images/mobile/image-transform.jpg');
     height: var(--egg-height);
     background-size: cover;
+    width: 375px;
+}
+.flex-transform{
+    display: block;
 }
 
 /* transform */
@@ -65,12 +144,17 @@ background-size: cover;
     text-align: center;
     padding: var(--tranform-padding);
     line-height: 32px;
+    display: block;
 }
+
 .transform p,.stand_out p,
 .director p,.ceo p,.owner p{
     padding: var(--paragraphs);
     color:var(--transform-para);
     font-family: 'Barlow', sans-serif;
+}
+.grid-standOut{
+    display: block;
 }
 /* glass */
 .glass{
