@@ -95,6 +95,61 @@ body{
     text-align: center;
     color:var(--photo-color);
 }
+.founders{
+    display: flex;
+    flex-direction: row;
+}
+.client_header{
+    text-align: center;
+    color: var(--transform-para);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+.leaders{
+    border-radius: 50%;
+    width: 72px;
+}
+.director,.ceo,.owner{
+    text-align: center;
+    padding: var(--tranform-padding);
+}
+.director h5,.ceo h5,.owner h5{
+    color:var(--transform-para);
+    font-family: 'Barlow', sans-serif;
+    line-height: 2;
+}
+.transform p,.stand_out p,
+.director p,.ceo p,.owner p{
+    padding: var(--paragraphs);
+    color:var(--transform-para);
+    font-family: 'Barlow', sans-serif;
+}
+.images{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+footer{
+    height: 350px;
+    background-color: #90D4C6;
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    color: var(--design-color);
+    padding: 120px 0;
+    font-family: 'Barlow', sans-serif;
+}
+.media_icons{
+    display: flex;
+    justify-content:center ;
+}
+
+
 
 
 
@@ -146,15 +201,11 @@ background-size: cover;
     line-height: 32px;
     display: block;
 }
-
-.transform p,.stand_out p,
-.director p,.ceo p,.owner p{
-    padding: var(--paragraphs);
-    color:var(--transform-para);
-    font-family: 'Barlow', sans-serif;
-}
 .grid-standOut{
     display: block;
+}
+.founders{
+display: block;
 }
 /* glass */
 .glass{
@@ -192,20 +243,7 @@ color: var(--design-color);
     letter-spacing: 5px;
     text-transform: uppercase;
 }
-.leaders{
-    border-radius: 50%;
-    width: 72px;
-}
-.director,.ceo,.owner{
-    text-align: center;
-    padding: var(--tranform-padding);
-}
-.director h5,.ceo h5,.owner h5{
-    color:var(--transform-para);
-    font-family: 'Barlow', sans-serif;
-    line-height: 2;
-   
-}
+
 /* images */
 .images{
     height: 375px;
@@ -217,22 +255,11 @@ color: var(--design-color);
 }
 
 /* footer */
-footer{
-    height: 350px;
-    background-color: #90D4C6;
-}
-
 footer ul{
-    display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    list-style: none;
-    color: var(--design-color);
     padding: 120px 0;
-    font-family: 'Barlow', sans-serif;
 }
 .media_icons{
-    display: flex;
     justify-content:space-around ;
 }
 }
